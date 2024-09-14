@@ -109,7 +109,7 @@ def home():
 
 @app.route('/view')
 def view():
-    return render_template('view.html',language=session['language'], available_languages=available_languages)
+    return render_template('view.html')
 
 def authenticate_user(contact, password):
     list = Details.query.filter_by(contact=contact).first()
@@ -784,7 +784,7 @@ def allowed_file(filename):
 @app.route('/tour')
 def tour():
     list = Places.query.filter_by().order_by().all()
-    return render_template('tour.html' , list = list,language=session['language'])
+    return render_template('tour.html' , list = list)
 
 @app.route('/place/<int:id>', methods = ["GET" , "POST"])
 def place(id):
@@ -827,7 +827,7 @@ def place_remove():
 @app.route('/where_to_stay')
 def where_to_stay():
     list = Details.query.filter_by(accept = 1).order_by().all()
-    return render_template('where_to_stay.html', list = list,language=session['language'])
+    return render_template('where_to_stay.html', list = list)
 
 
 @app.route('/dormitories')

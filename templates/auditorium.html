@@ -67,11 +67,11 @@
     </header> -->
     <div class="containerr">
       <nav class="head">
-        <h1 id="banks"></h1>
+        <h1 id="auditorium"></h1>
       </nav>
       <table class="table">
         <thead id="table-head">
-          <th id="">Auditoriums</th>
+          <th id="auditorium2"></th>
           <th id="contactNo"></th>
           <th id="location"></th>
         </thead>
@@ -102,16 +102,16 @@
           .then(translations => {
             if (!translations.error) {
               try {
-                document.getElementById('banks').innerText = translations['banks'];
+                document.getElementById('auditorium').innerText = translations['auditorium'];
               } catch (e) {
-                console.error('Element with ID "banks" not found:', e);
+                console.error('Element with ID "auditorium" not found:', e);
               }
-              
               try {
-                document.getElementById('bankn').innerText = translations['bankn'];
+                document.getElementById('auditorium2').innerText = translations['auditorium'];
               } catch (e) {
-                console.error('Element with ID "bankn" not found:', e);
+                console.error('Element with ID "auditorium" not found:', e);
               }
+
     
               try {
                 document.getElementById('contactNo').innerText = translations['contactNo'];

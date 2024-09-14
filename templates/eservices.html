@@ -71,9 +71,9 @@
       </nav>
       <table class="table">
         <thead id="table-head">
-          <th id="">Name</th>
+          <th id="name"></th>
           
-          <th id="">Link</th>
+          <th id="link"></th>
         </thead>
         <tbody id="table-body" style="text-align: center;">
           {% for item in list %}
@@ -103,6 +103,16 @@
                 document.getElementById('e_services').innerText = translations['e_services'];
               } catch (e) {
                 console.error('Element with ID "e_services" not found:', e);
+              }
+              try {
+                document.getElementById('name').innerText = translations['name'];
+              } catch (e) {
+                console.error('Element with ID "name" not found:', e);
+              }
+              try {
+                document.getElementById('link').innerText = translations['link'];
+              } catch (e) {
+                console.error('Element with ID "link" not found:', e);
               }
               
             }

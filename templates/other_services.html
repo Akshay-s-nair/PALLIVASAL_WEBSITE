@@ -140,7 +140,7 @@
           <img
             src="{{url_for('static',filename='images/parlour.webp')}}"
             class="card-img-top crdimg p-1"
-            alt="..."/><p class="cen" id="">Auditorium
+            alt="..."/><p class="cen" id="auditorium">
             </p></img>
         </div>
       </a>
@@ -155,7 +155,7 @@
             src="{{url_for('static',filename='images/studio.webp')}}"
             class="card-img-top crdimg p-1"
             alt="..."
-          /><p class="cen" id="">Hiring Services
+          /><p class="cen" id="hiring">
           </p></img>
       </div>
     </a>
@@ -205,6 +205,16 @@
                 document.getElementById('studio').innerText = translations['studio'];
               } catch (e) {
                 console.error('Element with ID "studio" not found:', e);
+              }
+              try {
+                document.getElementById('hiring').innerText = translations['hiring'];
+              } catch (e) {
+                console.error('Element with ID "hiring" not found:', e);
+              }
+              try {
+                document.getElementById('auditorium').innerText = translations['auditorium'];
+              } catch (e) {
+                console.error('Element with ID "auditorium" not found:', e);
               }
     
               

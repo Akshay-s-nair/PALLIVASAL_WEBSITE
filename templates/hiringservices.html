@@ -67,11 +67,11 @@
     </header> -->
     <div class="containerr">
       <nav class="head">
-        <h1 id="banks"></h1>
+        <h1 id="hiring2"></h1>
       </nav>
       <table class="table">
         <thead id="table-head">
-          <th id="">Hiring Services</th>
+          <th id="hiring"></th>
           <th id="contactNo"></th>
           <th id="location"></th>
         </thead>
@@ -85,7 +85,7 @@
               <a href="">{{ item.contact }}</a>
             </td>
             <td>
-              <a href="{{/view_hiringservice }}">Details</a>
+              <a href="{{ view_hiringservice }}">Details</a>
             </td>
           </tr>
           {% endfor %}
@@ -102,10 +102,16 @@
           .then(translations => {
             if (!translations.error) {
               try {
-                document.getElementById('banks').innerText = translations['banks'];
+                document.getElementById('hiring').innerText = translations['hiring'];
               } catch (e) {
-                console.error('Element with ID "banks" not found:', e);
+                console.error('Element with ID "hiring" not found:', e);
               }
+              try {
+                document.getElementById('hiring2').innerText = translations['hiring'];
+              } catch (e) {
+                console.error('Element with ID "hiring" not found:', e);
+              }
+              
               
               try {
                 document.getElementById('bankn').innerText = translations['bankn'];
