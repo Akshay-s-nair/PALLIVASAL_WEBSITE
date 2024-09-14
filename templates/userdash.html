@@ -236,10 +236,9 @@
         <h3>{{ item1.remuneration_details | default('') }}</h3>
         {% if item1.img is not none %}
         <h5>Photos of your work</h5>
-        <a href="/image/{{ item1.img }}" target="_blank">click here to view the picture
-        </a>        
+        <h3><a href="/image/{{ item1.img }}" target="_blank">click here to view the picture
+        </a> </h3>       
         {% endif %}
-        <!-- <img src="{{ url_for('static',filename=fname) }}" alt="image">click -->
         <button onclick="changeDivContent()" >Edit</button>
       </div>
       {% endfor %}
@@ -257,7 +256,7 @@
           <label>Location Details(Link of Google Map)</label>
           <input value="{{ item2.location | default('') }}" type="text" name="location">
           <label>Property description</label>
-          <input value="{{ item2.description | default('') }}" type="text" name="description">
+          <textarea value="{{ item2.description | default('') }}" type="text" name="description" style="max-width: 300px;margin-left: 10px;height: 50px;"></textarea>
           <label>Additional contact number</label>
           <input value="{{ item2.contact2 | default('') }}" type="text" name="contact">
           <label>Facilities</label>
@@ -335,7 +334,7 @@
           <label>Location Details(Link of Google Map)</label>
           <input value="{{ item2.location | default('') }}" type="text" name="location">
           <label>Property description</label>
-          <input value="{{ item2.description | default('') }}" type="text" name="description">
+          <textarea value="{{ item2.description | default('') }}" type="text" name="description" style="max-width: 300px;margin-left: 10px;height: 50px;"></textarea>
           <label>Additional contact number</label>
           <input value="{{ item2.contact2 | default('') }}" type="text" name="contact">
           <label>Place</label>
@@ -409,7 +408,7 @@
           <label>Location Details(Link of Google Map)</label>
           <input value="{{ item2.location | default('') }}" type="text" name="location">
           <label>Property description</label>
-          <input value="{{ item2.description | default('') }}" type="text" name="description">
+          <textarea value="{{ item2.description | default('') }}" type="text" name="description" style="max-width: 300px;margin-left: 10px;height: 50px;"></textarea>
           <label>Additional contact number</label>
           <input value="{{ item2.contact2 | default('') }}" type="text" name="contact">
           <label>Place</label>
@@ -453,7 +452,7 @@
           <label>Location Details(Link of Google Map)</label>
           <input value="{{ item2.location | default('') }}" type="text" name="location">
           <label>Description</label>
-          <input value="{{ item2.description | default('') }}" type="text" name="description">
+          <textarea value="{{ item2.description | default('') }}" type="text" name="description" style="max-width: 300px;margin-left: 10px;height: 50px;"></textarea>
           <label>Additional contact number</label>
           <input value="{{ item2.contact2 | default('') }}" type="text" name="contact">
           <label>Place</label>
@@ -538,7 +537,7 @@
         <label>Location Details(Link of Google Map)</label>
         <input value="{{ item2.location | default('') }}" type="text" name="location">
         <label>Description</label>
-        <input value="{{ item2.description | default('') }}" type="text" name="description">
+        <textarea value="{{ item2.description | default('') }}" type="text" name="description" style="max-width: 300px;margin-left: 10px;height: 50px;"></textarea>
         <label>Additional contact number</label>
         <input value="{{ item2.contact2 | default('') }}" type="text" name="contact"  maxlength="10">
         <label>Place</label>
@@ -615,7 +614,7 @@
         <label>Location Details(Link of Google Map)</label>
         <input value="{{ item2.location | default('') }}" type="text" name="location">
         <label>Description</label>
-        <input value="{{ item2.description | default('') }}" type="text" name="description">
+        <textarea value="{{ item2.description | default('') }}" type="text" name="description" style="max-width: 300px;margin-left: 10px;height: 50px;"></textarea>
         <label>Additional contact number</label>
         <input value="{{ item2.contact2 | default('') }}" type="text" name="contact">
         <label>Place</label>

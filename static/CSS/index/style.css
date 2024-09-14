@@ -485,6 +485,13 @@ body{
   left: 0;
   background-image: linear-gradient(to bottom, rgba(255,0,0,0),20%, rgba(0, 0, 0, 0.885));
 }
+.local_card{
+  background-color: #003b1a;
+  border: #696969 solid 1px;
+  border-radius: 10px;
+  height: 80px;
+  
+}
 .crdimg{
   height: 100%;
   background-color: #000000d8;

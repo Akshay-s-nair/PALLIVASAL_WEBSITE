@@ -324,27 +324,28 @@ form.formbut{
         max-width: 100%;
         overflow-x: hidden;
         }
-    .box1{
-        width: 100%;
-        height: fit-content;
-        padding-bottom: 20px;
-        position: relative;
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%,0%);
-        margin-bottom: 10px;
-        
-    }
-    .box{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        /* top: 100%;
-        left: 50%;
-        transform: translate(-50%,-30%); */
-        margin-right: 10px;
-    }
-
+        .box1{
+            width: 90%;
+            height: fit-content;
+            padding-bottom: 20px;
+            position: relative;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%,0%);
+            border-radius: 10px;
+            margin-bottom: 10px;
+            
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            /* position: absolute; */
+            justify-content: center;
+            /* top: 100%;
+            left: 50%;
+            transform: translate(-50%,-30%); */
+            margin-right: 10px;
+        }
     .box2{
         width: 21em;
         height: fit-content;
