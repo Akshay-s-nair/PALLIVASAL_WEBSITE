@@ -26,13 +26,13 @@
         
         <div class="container ">
             <div class="row">
-                <div class="description">
+                <div class="description text-white">
 				{% for item2 in info %}				
-                    <h2>Contact</h2>
-                    <p>{{ item2.contact }}</p>
+                    <p>Contact</p>
+                    <h5>{{ item2.contact }}</h5>
 				{%endfor%}
-                    <h2>Description</h2>
-                    <p>{{ item.description }}</p>
+                    <p>Description</p>
+                    <h5>{{ item.description }}</h5>
                 </div>
                 <div class="mapp">
                     <div class="containerr">
@@ -58,7 +58,7 @@
 							<img src="{{ url_for('static',filename=fname5) }}" alt="Place 5">	
 							{% endif %}
 						</div>
-						<a href="{{ item.map }}">
+						<a href="{{ item.location }}" class="mx-5 my-3">
 								<p>  <b>Location</b> </p>
 							
 						</a>
