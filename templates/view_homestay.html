@@ -87,6 +87,11 @@
         <h5>Facilities : {{ item2.facilities }}</h5>
         <h5>Number of rooms : {{ item2.no_of_rooms }}</h5>
         <h5>Services : {{ item2.services }}</h5>
+        <a href="{{ item2.location }}">
+          <button  class = "btn btn-light">
+           Location
+          </button>
+        </a>
         {% endfor %}
       </div>
     </div>
